@@ -1,0 +1,379 @@
+/* Fonts */
+@font-face {
+    font-family: 'myNormalFont';
+    src: url('Resources/netflix.otf')
+}
+
+@font-face {
+    font-family: 'myBoldFont';
+    src: url('Resources/netflix-bold.otf')
+}
+
+@font-face {
+    font-family: 'myLightFont';
+    src: url('Resources/netflix-light.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* set background color to black */
+
+body {
+    background-color: black;
+}
+
+/* main portion */
+.main {
+    background-image: url('Resources/background-image.jpg');
+    background-position: center center;
+    background-size: max(1400px, 100vw);
+    background-repeat: no-repeat;
+    height: 750px;
+    position: relative;
+}
+
+/* layer that give background a blackish shade */
+.main .box-layer {
+    height: 750px;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+/* navbar of the webpage */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 62px;
+    max-width: 80vw;
+}
+
+/* netflix logo */
+.logo {
+    margin-top: 25px;
+    position: relative;
+    z-index: 10;
+    width: 148px;
+}
+
+/* hero section */
+.hero-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    margin-top: -50px;
+}
+
+/* text which is present in the hero section */
+.hero-text-1 {
+    font-family: Helvetica;
+    font-size: 3.1rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+}
+
+.hero-text-2 {
+    font-family: myNormalFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-text-3 {
+    font-family: myNormalFont;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+/* sign in button */
+.nav-btn-signin {
+    margin-top: 25px;
+    width: 76px;
+    height: 32px;
+    padding: 8px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+}
+
+/* last portion of main */
+.hero-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 15px;
+}
+
+.hero-bottom svg {
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.get-started-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 190px;
+    background-color: rgb(229, 9, 20);
+    font-family: myNormalFont;
+    font-weight: 570;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    position: relative;
+    z-index: 10;
+    font-size: 23px;
+
+}
+
+.email-address {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    height: 50px;
+    width: 364px;
+    border-radius: 0.25rem;
+    margin: 10px;
+}
+
+.email-address::placeholder {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+
+/* sepration line */
+.line {
+    height: 7px;
+    background-color: rgb(88, 87, 87);
+}
+
+/* portion 1 */
+.portion-1 {
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 60vw;
+    margin-top: 20px;
+}
+
+.portion-2 {
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+    margin-top: 20px;
+}
+
+.img-portion-2 {
+    margin-top: 270px;
+}
+
+.text-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.vedio-section {
+    margin-bottom: 330px;
+    width: 50%;
+    position: relative;
+}
+
+.vedio-section img {
+    width: 32vw;
+    position: relative;
+    z-index: 10;
+}
+
+.vedio-section video {
+    width: 26vw;
+    position: relative;
+    padding: 40px;
+    top: 340px;
+    left: 25px;
+}
+
+.text-1 {
+    font-family: Helvetica;
+    font-size: 2.25rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+}
+
+.text-2 {
+    font-family: myNormalFont;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.small-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 65px;
+    width: 314px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    margin-top: 200px;
+}
+
+
+.text-small {
+    font-family: myNormalFont;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.text-small-2 {
+    font-family: myNormalFont;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: blue;
+}
+
+.img-section {
+    width: 55%;
+}
+
+.kids-img {
+    height: 430px;
+}
+
+.portion-3 {
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.faq h2 {
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: myBoldFont;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+}
+
+.faq-box {
+    display: flex;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    padding: 19px;
+    justify-content: space-between;
+    width: 70%;
+    height: 38px;
+    font-family: myNormalFont;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.answer-element {
+    display: flex;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    padding: 19px;
+    justify-content: space-between;
+    width: 70%;
+    font-family: myNormalFont;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: -7px;
+}
+.faq-box svg {
+    color: white;
+}
+
+.faq-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.faq-text-1 {
+    font-family: myNormalFont;
+    font-size: 1.20rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    color: #ffffffb3;
+    gap: 200px;
+    font-family: myLightFont;
+    font-size: 0.85rem;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.footer-container ul li {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-container li {
+    margin-top: 20px;
+}
+
+#Questions-footer {
+    font-size: 0.90rem;
+}
+
+.lang-btn {
+    width: 120px;
+    height: 30px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ffffffb3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
